@@ -18,7 +18,6 @@ import net.minecraft.component.type.NbtComponent;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.registry.tag.DamageTypeTags;
 import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.text.Style;
@@ -77,14 +76,6 @@ public class ArmoredElytra implements ModInitializer {
 		if (trims != null && trims.isPresent()) {
 			newElytra.applyChanges(ComponentChanges.builder().add(DataComponentTypes.TRIM,
 					trims.get()).build());
-		}
-
-		// Copy Lava immunity
-		var fire_res = armor.get(DataComponentTypes.DAMAGE_RESISTANT);
-		if (fire_res != null && fire_res.types() == DamageTypeTags.IS_FIRE) {
-			newElytra.applyChanges(
-					ComponentChanges.builder().add(DataComponentTypes.DAMAGE_RESISTANT,
-							fire_res).build());
 		}
 
 		var armorType = armor.getItem().toString();
