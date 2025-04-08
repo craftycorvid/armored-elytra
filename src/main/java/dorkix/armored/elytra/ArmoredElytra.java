@@ -140,6 +140,7 @@ public class ArmoredElytra implements ModInitializer {
 		newElytra.applyComponentsFrom(
 				ComponentMap.builder().add(DataComponentTypes.CUSTOM_DATA, NbtComponent.of(customData)).build());
 
+		newElytra.set(DataComponentTypes.ITEM_MODEL, Identifier.of(Items.ELYTRA.toString()));
 		newElytra.set(DataComponentTypes.CUSTOM_MODEL_DATA, new CustomModelDataComponent(Collections.emptyList(),
 				Collections.emptyList(), List.of(armorType), Collections.emptyList()));
 
