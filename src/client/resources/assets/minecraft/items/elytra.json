@@ -6,44 +6,40 @@
       "cases": [
         {
           "model": {
-            "type": "minecraft:select",
-            "cases": [
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_leather_chestplate_quartz_trim",
-                  "tints": [
-                    {
-                      "type": "minecraft:constant",
-                      "value": [1, 1, 1]
-                    },
-                    {
-                      "type": "minecraft:dye",
-                      "default": -6265536
-                    }
-                  ]
+            "type": "minecraft:condition",
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "armored_elytra:item/elytra_leather_chestplate_quartz_trim",
+              "tints": [
+                {
+                  "type": "minecraft:constant",
+                  "value": [1, 1, 1]
                 },
-                "when": "minecraft:quartz"
+                {
+                  "type": "minecraft:dye",
+                  "default": -6265536
+                }
+              ]
+            },
+            "on_false": {
+              "type": "minecraft:condition",
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "armored_elytra:item/elytra_leather_chestplate_iron_trim",
+                "tints": [
+                  {
+                    "type": "minecraft:constant",
+                    "value": [1, 1, 1]
+                  },
+                  {
+                    "type": "minecraft:dye",
+                    "default": -6265536
+                  }
+                ]
               },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_leather_chestplate_iron_trim",
-                  "tints": [
-                    {
-                      "type": "minecraft:constant",
-                      "value": [1, 1, 1]
-                    },
-                    {
-                      "type": "minecraft:dye",
-                      "default": -6265536
-                    }
-                  ]
-                },
-                "when": "minecraft:iron"
-              },
-              {
-                "model": {
+              "on_false": {
+                "type": "minecraft:condition",
+                "on_true": {
                   "type": "minecraft:model",
                   "model": "armored_elytra:item/elytra_leather_chestplate_netherite_trim",
                   "tints": [
@@ -57,610 +53,896 @@
                     }
                   ]
                 },
-                "when": "minecraft:netherite"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_leather_chestplate_redstone_trim",
-                  "tints": [
-                    {
-                      "type": "minecraft:constant",
-                      "value": [1, 1, 1]
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "armored_elytra:item/elytra_leather_chestplate_redstone_trim",
+                    "tints": [
+                      {
+                        "type": "minecraft:constant",
+                        "value": [1, 1, 1]
+                      },
+                      {
+                        "type": "minecraft:dye",
+                        "default": -6265536
+                      }
+                    ]
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "armored_elytra:item/elytra_leather_chestplate_copper_trim",
+                      "tints": [
+                        {
+                          "type": "minecraft:constant",
+                          "value": [1, 1, 1]
+                        },
+                        {
+                          "type": "minecraft:dye",
+                          "default": -6265536
+                        }
+                      ]
                     },
-                    {
-                      "type": "minecraft:dye",
-                      "default": -6265536
-                    }
-                  ]
-                },
-                "when": "minecraft:redstone"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_leather_chestplate_copper_trim",
-                  "tints": [
-                    {
-                      "type": "minecraft:constant",
-                      "value": [1, 1, 1]
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "armored_elytra:item/elytra_leather_chestplate_gold_trim",
+                        "tints": [
+                          {
+                            "type": "minecraft:constant",
+                            "value": [1, 1, 1]
+                          },
+                          {
+                            "type": "minecraft:dye",
+                            "default": -6265536
+                          }
+                        ]
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "armored_elytra:item/elytra_leather_chestplate_emerald_trim",
+                          "tints": [
+                            {
+                              "type": "minecraft:constant",
+                              "value": [1, 1, 1]
+                            },
+                            {
+                              "type": "minecraft:dye",
+                              "default": -6265536
+                            }
+                          ]
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "armored_elytra:item/elytra_leather_chestplate_diamond_trim",
+                            "tints": [
+                              {
+                                "type": "minecraft:constant",
+                                "value": [1, 1, 1]
+                              },
+                              {
+                                "type": "minecraft:dye",
+                                "default": -6265536
+                              }
+                            ]
+                          },
+                          "on_false": {
+                            "type": "minecraft:condition",
+                            "on_true": {
+                              "type": "minecraft:model",
+                              "model": "armored_elytra:item/elytra_leather_chestplate_lapis_trim",
+                              "tints": [
+                                {
+                                  "type": "minecraft:constant",
+                                  "value": [1, 1, 1]
+                                },
+                                {
+                                  "type": "minecraft:dye",
+                                  "default": -6265536
+                                }
+                              ]
+                            },
+                            "on_false": {
+                              "type": "minecraft:condition",
+                              "on_true": {
+                                "type": "minecraft:model",
+                                "model": "armored_elytra:item/elytra_leather_chestplate_amethyst_trim",
+                                "tints": [
+                                  {
+                                    "type": "minecraft:constant",
+                                    "value": [1, 1, 1]
+                                  },
+                                  {
+                                    "type": "minecraft:dye",
+                                    "default": -6265536
+                                  }
+                                ]
+                              },
+                              "on_false": {
+                                "type": "minecraft:condition",
+                                "on_true": {
+                                  "type": "minecraft:model",
+                                  "model": "armored_elytra:item/elytra_leather_chestplate_resin_trim",
+                                  "tints": [
+                                    {
+                                      "type": "minecraft:constant",
+                                      "value": [1, 1, 1]
+                                    },
+                                    {
+                                      "type": "minecraft:dye",
+                                      "default": -6265536
+                                    }
+                                  ]
+                                },
+                                "on_false": {
+                                  "type": "minecraft:model",
+                                  "model": "armored_elytra:item/elytra_leather_chestplate",
+                                  "tints": [
+                                    {
+                                      "type": "minecraft:constant",
+                                      "value": [1, 1, 1]
+                                    },
+                                    {
+                                      "type": "minecraft:dye",
+                                      "default": -6265536
+                                    }
+                                  ]
+                                },
+                                "property": "minecraft:component",
+                                "predicate": "minecraft:custom_data",
+                                "value": {
+                                  "armored_elytra:trim_material": "minecraft:resin"
+                                }
+                              },
+                              "property": "minecraft:component",
+                              "predicate": "minecraft:custom_data",
+                              "value": {
+                                "armored_elytra:trim_material": "minecraft:amethyst"
+                              }
+                            },
+                            "property": "minecraft:component",
+                            "predicate": "minecraft:custom_data",
+                            "value": {
+                              "armored_elytra:trim_material": "minecraft:lapis"
+                            }
+                          },
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {
+                            "armored_elytra:trim_material": "minecraft:diamond"
+                          }
+                        },
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {
+                          "armored_elytra:trim_material": "minecraft:emerald"
+                        }
+                      },
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {
+                        "armored_elytra:trim_material": "minecraft:gold"
+                      }
                     },
-                    {
-                      "type": "minecraft:dye",
-                      "default": -6265536
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {
+                      "armored_elytra:trim_material": "minecraft:copper"
                     }
-                  ]
+                  },
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {
+                    "armored_elytra:trim_material": "minecraft:redstone"
+                  }
                 },
-                "when": "minecraft:copper"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_leather_chestplate_gold_trim",
-                  "tints": [
-                    {
-                      "type": "minecraft:constant",
-                      "value": [1, 1, 1]
-                    },
-                    {
-                      "type": "minecraft:dye",
-                      "default": -6265536
-                    }
-                  ]
-                },
-                "when": "minecraft:gold"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_leather_chestplate_emerald_trim",
-                  "tints": [
-                    {
-                      "type": "minecraft:constant",
-                      "value": [1, 1, 1]
-                    },
-                    {
-                      "type": "minecraft:dye",
-                      "default": -6265536
-                    }
-                  ]
-                },
-                "when": "minecraft:emerald"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_leather_chestplate_diamond_trim",
-                  "tints": [
-                    {
-                      "type": "minecraft:constant",
-                      "value": [1, 1, 1]
-                    },
-                    {
-                      "type": "minecraft:dye",
-                      "default": -6265536
-                    }
-                  ]
-                },
-                "when": "minecraft:diamond"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_leather_chestplate_lapis_trim",
-                  "tints": [
-                    {
-                      "type": "minecraft:constant",
-                      "value": [1, 1, 1]
-                    },
-                    {
-                      "type": "minecraft:dye",
-                      "default": -6265536
-                    }
-                  ]
-                },
-                "when": "minecraft:lapis"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_leather_chestplate_amethyst_trim",
-                  "tints": [
-                    {
-                      "type": "minecraft:constant",
-                      "value": [1, 1, 1]
-                    },
-                    {
-                      "type": "minecraft:dye",
-                      "default": -6265536
-                    }
-                  ]
-                },
-                "when": "minecraft:amethyst"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_leather_chestplate_resin_trim",
-                  "tints": [
-                    {
-                      "type": "minecraft:constant",
-                      "value": [1, 1, 1]
-                    },
-                    {
-                      "type": "minecraft:dye",
-                      "default": -6265536
-                    }
-                  ]
-                },
-                "when": "minecraft:resin"
-              }
-            ],
-            "fallback": {
-              "type": "minecraft:model",
-              "model": "armored_elytra:item/elytra_leather_chestplate",
-              "tints": [
-                {
-                  "type": "minecraft:constant",
-                  "value": [1, 1, 1]
-                },
-                {
-                  "type": "minecraft:dye",
-                  "default": -6265536
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {
+                  "armored_elytra:trim_material": "minecraft:netherite"
                 }
-              ]
+              },
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {
+                "armored_elytra:trim_material": "minecraft:iron"
+              }
             },
-            "property": "minecraft:trim_material"
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {
+              "armored_elytra:trim_material": "minecraft:quartz"
+            }
           },
           "when": "minecraft:leather_chestplate"
         },
         {
           "model": {
-            "type": "minecraft:select",
-            "cases": [
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_netherite_chestplate_quartz_trim"
-                },
-                "when": "minecraft:quartz"
+            "type": "minecraft:condition",
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "armored_elytra:item/elytra_netherite_chestplate_quartz_trim"
+            },
+            "on_false": {
+              "type": "minecraft:condition",
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "armored_elytra:item/elytra_netherite_chestplate_netherite_darker_trim"
               },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_netherite_chestplate_iron_trim"
-                },
-                "when": "minecraft:iron"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_netherite_chestplate_netherite_darker_trim"
-                },
-                "when": "minecraft:netherite"
-              },
-              {
-                "model": {
+              "on_false": {
+                "type": "minecraft:condition",
+                "on_true": {
                   "type": "minecraft:model",
                   "model": "armored_elytra:item/elytra_netherite_chestplate_redstone_trim"
                 },
-                "when": "minecraft:redstone"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_netherite_chestplate_copper_trim"
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "armored_elytra:item/elytra_netherite_chestplate_copper_trim"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "armored_elytra:item/elytra_netherite_chestplate_gold_trim"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "armored_elytra:item/elytra_netherite_chestplate_emerald_trim"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "armored_elytra:item/elytra_netherite_chestplate_diamond_trim"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "armored_elytra:item/elytra_netherite_chestplate_lapis_trim"
+                          },
+                          "on_false": {
+                            "type": "minecraft:condition",
+                            "on_true": {
+                              "type": "minecraft:model",
+                              "model": "armored_elytra:item/elytra_netherite_chestplate_amethyst_trim"
+                            },
+                            "on_false": {
+                              "type": "minecraft:condition",
+                              "on_true": {
+                                "type": "minecraft:model",
+                                "model": "armored_elytra:item/elytra_netherite_chestplate_resin_trim"
+                              },
+                              "on_false": {
+                                "type": "minecraft:model",
+                                "model": "armored_elytra:item/elytra_netherite_chestplate"
+                              },
+                              "property": "minecraft:component",
+                              "predicate": "minecraft:custom_data",
+                              "value": {
+                                "armored_elytra:trim_material": "minecraft:resin"
+                              }
+                            },
+                            "property": "minecraft:component",
+                            "predicate": "minecraft:custom_data",
+                            "value": {
+                              "armored_elytra:trim_material": "minecraft:amethyst"
+                            }
+                          },
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {
+                            "armored_elytra:trim_material": "minecraft:lapis"
+                          }
+                        },
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {
+                          "armored_elytra:trim_material": "minecraft:diamond"
+                        }
+                      },
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {
+                        "armored_elytra:trim_material": "minecraft:emerald"
+                      }
+                    },
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {
+                      "armored_elytra:trim_material": "minecraft:gold"
+                    }
+                  },
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {
+                    "armored_elytra:trim_material": "minecraft:copper"
+                  }
                 },
-                "when": "minecraft:copper"
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {
+                  "armored_elytra:trim_material": "minecraft:redstone"
+                }
               },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_netherite_chestplate_gold_trim"
-                },
-                "when": "minecraft:gold"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_netherite_chestplate_emerald_trim"
-                },
-                "when": "minecraft:emerald"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_netherite_chestplate_diamond_trim"
-                },
-                "when": "minecraft:diamond"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_netherite_chestplate_lapis_trim"
-                },
-                "when": "minecraft:lapis"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_netherite_chestplate_amethyst_trim"
-                },
-                "when": "minecraft:amethyst"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_netherite_chestplate_resin_trim"
-                },
-                "when": "minecraft:resin"
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {
+                "armored_elytra:trim_material": "minecraft:netherite"
               }
-            ],
-            "fallback": {
-              "type": "minecraft:model",
-              "model": "armored_elytra:item/elytra_netherite_chestplate"
             },
-            "property": "minecraft:trim_material"
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {
+              "armored_elytra:trim_material": "minecraft:quartz"
+            }
           },
           "when": "minecraft:netherite_chestplate"
         },
         {
           "model": {
-            "type": "minecraft:select",
-            "cases": [
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_diamond_chestplate_quartz_trim"
-                },
-                "when": "minecraft:quartz"
+            "type": "minecraft:condition",
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "armored_elytra:item/elytra_diamond_chestplate_quartz_trim"
+            },
+            "on_false": {
+              "type": "minecraft:condition",
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "armored_elytra:item/elytra_diamond_chestplate_iron_trim"
               },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_diamond_chestplate_iron_trim"
-                },
-                "when": "minecraft:iron"
-              },
-              {
-                "model": {
+              "on_false": {
+                "type": "minecraft:condition",
+                "on_true": {
                   "type": "minecraft:model",
                   "model": "armored_elytra:item/elytra_diamond_chestplate_netherite_trim"
                 },
-                "when": "minecraft:netherite"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_diamond_chestplate_redstone_trim"
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "armored_elytra:item/elytra_diamond_chestplate_redstone_trim"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "armored_elytra:item/elytra_diamond_chestplate_copper_trim"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "armored_elytra:item/elytra_diamond_chestplate_gold_trim"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "armored_elytra:item/elytra_diamond_chestplate_emerald_trim"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "armored_elytra:item/elytra_diamond_chestplate_diamond_darker_trim"
+                          },
+                          "on_false": {
+                            "type": "minecraft:condition",
+                            "on_true": {
+                              "type": "minecraft:model",
+                              "model": "armored_elytra:item/elytra_diamond_chestplate_lapis_trim"
+                            },
+                            "on_false": {
+                              "type": "minecraft:condition",
+                              "on_true": {
+                                "type": "minecraft:model",
+                                "model": "armored_elytra:item/elytra_diamond_chestplate_amethyst_trim"
+                              },
+                              "on_false": {
+                                "type": "minecraft:condition",
+                                "on_true": {
+                                  "type": "minecraft:model",
+                                  "model": "armored_elytra:item/elytra_diamond_chestplate_resin_trim"
+                                },
+                                "on_false": {
+                                  "type": "minecraft:model",
+                                  "model": "armored_elytra:item/elytra_diamond_chestplate"
+                                },
+                                "property": "minecraft:component",
+                                "predicate": "minecraft:custom_data",
+                                "value": {
+                                  "armored_elytra:trim_material": "minecraft:resin"
+                                }
+                              },
+                              "property": "minecraft:component",
+                              "predicate": "minecraft:custom_data",
+                              "value": {
+                                "armored_elytra:trim_material": "minecraft:amethyst"
+                              }
+                            },
+                            "property": "minecraft:component",
+                            "predicate": "minecraft:custom_data",
+                            "value": {
+                              "armored_elytra:trim_material": "minecraft:lapis"
+                            }
+                          },
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {
+                            "armored_elytra:trim_material": "minecraft:diamond"
+                          }
+                        },
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {
+                          "armored_elytra:trim_material": "minecraft:emerald"
+                        }
+                      },
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {
+                        "armored_elytra:trim_material": "minecraft:gold"
+                      }
+                    },
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {
+                      "armored_elytra:trim_material": "minecraft:copper"
+                    }
+                  },
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {
+                    "armored_elytra:trim_material": "minecraft:redstone"
+                  }
                 },
-                "when": "minecraft:redstone"
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {
+                  "armored_elytra:trim_material": "minecraft:netherite"
+                }
               },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_diamond_chestplate_copper_trim"
-                },
-                "when": "minecraft:copper"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_diamond_chestplate_gold_trim"
-                },
-                "when": "minecraft:gold"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_diamond_chestplate_emerald_trim"
-                },
-                "when": "minecraft:emerald"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_diamond_chestplate_diamond_darker_trim"
-                },
-                "when": "minecraft:diamond"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_diamond_chestplate_lapis_trim"
-                },
-                "when": "minecraft:lapis"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_diamond_chestplate_amethyst_trim"
-                },
-                "when": "minecraft:amethyst"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_diamond_chestplate_resin_trim"
-                },
-                "when": "minecraft:resin"
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {
+                "armored_elytra:trim_material": "minecraft:iron"
               }
-            ],
-            "fallback": {
-              "type": "minecraft:model",
-              "model": "armored_elytra:item/elytra_diamond_chestplate"
             },
-            "property": "minecraft:trim_material"
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {
+              "armored_elytra:trim_material": "minecraft:quartz"
+            }
           },
           "when": "minecraft:diamond_chestplate"
         },
         {
           "model": {
-            "type": "minecraft:select",
-            "cases": [
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_golden_chestplate_quartz_trim"
-                },
-                "when": "minecraft:quartz"
+            "type": "minecraft:condition",
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "armored_elytra:item/elytra_golden_chestplate_quartz_trim"
+            },
+            "on_false": {
+              "type": "minecraft:condition",
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "armored_elytra:item/elytra_golden_chestplate_iron_trim"
               },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_golden_chestplate_iron_trim"
-                },
-                "when": "minecraft:iron"
-              },
-              {
-                "model": {
+              "on_false": {
+                "type": "minecraft:condition",
+                "on_true": {
                   "type": "minecraft:model",
                   "model": "armored_elytra:item/elytra_golden_chestplate_netherite_trim"
                 },
-                "when": "minecraft:netherite"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_golden_chestplate_redstone_trim"
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "armored_elytra:item/elytra_golden_chestplate_redstone_trim"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "armored_elytra:item/elytra_golden_chestplate_copper_trim"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "armored_elytra:item/elytra_golden_chestplate_gold_darker_trim"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "armored_elytra:item/elytra_golden_chestplate_emerald_trim"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "armored_elytra:item/elytra_golden_chestplate_diamond_trim"
+                          },
+                          "on_false": {
+                            "type": "minecraft:condition",
+                            "on_true": {
+                              "type": "minecraft:model",
+                              "model": "armored_elytra:item/elytra_golden_chestplate_lapis_trim"
+                            },
+                            "on_false": {
+                              "type": "minecraft:condition",
+                              "on_true": {
+                                "type": "minecraft:model",
+                                "model": "armored_elytra:item/elytra_golden_chestplate_amethyst_trim"
+                              },
+                              "on_false": {
+                                "type": "minecraft:condition",
+                                "on_true": {
+                                  "type": "minecraft:model",
+                                  "model": "armored_elytra:item/elytra_golden_chestplate_resin_trim"
+                                },
+                                "on_false": {
+                                  "type": "minecraft:model",
+                                  "model": "armored_elytra:item/elytra_golden_chestplate"
+                                },
+                                "property": "minecraft:component",
+                                "predicate": "minecraft:custom_data",
+                                "value": {
+                                  "armored_elytra:trim_material": "minecraft:resin"
+                                }
+                              },
+                              "property": "minecraft:component",
+                              "predicate": "minecraft:custom_data",
+                              "value": {
+                                "armored_elytra:trim_material": "minecraft:amethyst"
+                              }
+                            },
+                            "property": "minecraft:component",
+                            "predicate": "minecraft:custom_data",
+                            "value": {
+                              "armored_elytra:trim_material": "minecraft:lapis"
+                            }
+                          },
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {
+                            "armored_elytra:trim_material": "minecraft:diamond"
+                          }
+                        },
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {
+                          "armored_elytra:trim_material": "minecraft:emerald"
+                        }
+                      },
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {
+                        "armored_elytra:trim_material": "minecraft:gold"
+                      }
+                    },
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {
+                      "armored_elytra:trim_material": "minecraft:copper"
+                    }
+                  },
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {
+                    "armored_elytra:trim_material": "minecraft:redstone"
+                  }
                 },
-                "when": "minecraft:redstone"
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {
+                  "armored_elytra:trim_material": "minecraft:netherite"
+                }
               },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_golden_chestplate_copper_trim"
-                },
-                "when": "minecraft:copper"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_golden_chestplate_gold_darker_trim"
-                },
-                "when": "minecraft:gold"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_golden_chestplate_emerald_trim"
-                },
-                "when": "minecraft:emerald"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_golden_chestplate_diamond_trim"
-                },
-                "when": "minecraft:diamond"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_golden_chestplate_lapis_trim"
-                },
-                "when": "minecraft:lapis"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_golden_chestplate_amethyst_trim"
-                },
-                "when": "minecraft:amethyst"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_golden_chestplate_resin_trim"
-                },
-                "when": "minecraft:resin"
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {
+                "armored_elytra:trim_material": "minecraft:iron"
               }
-            ],
-            "fallback": {
-              "type": "minecraft:model",
-              "model": "armored_elytra:item/elytra_golden_chestplate"
             },
-            "property": "minecraft:trim_material"
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {
+              "armored_elytra:trim_material": "minecraft:quartz"
+            }
           },
           "when": "minecraft:golden_chestplate"
         },
         {
           "model": {
-            "type": "minecraft:select",
-            "cases": [
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_iron_chestplate_quartz_trim"
-                },
-                "when": "minecraft:quartz"
+            "type": "minecraft:condition",
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "armored_elytra:item/elytra_iron_chestplate_quartz_trim"
+            },
+            "on_false": {
+              "type": "minecraft:condition",
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "armored_elytra:item/elytra_iron_chestplate_iron_darker_trim"
               },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_iron_chestplate_iron_darker_trim"
-                },
-                "when": "minecraft:iron"
-              },
-              {
-                "model": {
+              "on_false": {
+                "type": "minecraft:condition",
+                "on_true": {
                   "type": "minecraft:model",
                   "model": "armored_elytra:item/elytra_iron_chestplate_netherite_trim"
                 },
-                "when": "minecraft:netherite"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_iron_chestplate_redstone_trim"
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "armored_elytra:item/elytra_iron_chestplate_redstone_trim"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "armored_elytra:item/elytra_iron_chestplate_copper_trim"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "armored_elytra:item/elytra_iron_chestplate_gold_trim"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "armored_elytra:item/elytra_iron_chestplate_emerald_trim"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "armored_elytra:item/elytra_iron_chestplate_diamond_trim"
+                          },
+                          "on_false": {
+                            "type": "minecraft:condition",
+                            "on_true": {
+                              "type": "minecraft:model",
+                              "model": "armored_elytra:item/elytra_iron_chestplate_lapis_trim"
+                            },
+                            "on_false": {
+                              "type": "minecraft:condition",
+                              "on_true": {
+                                "type": "minecraft:model",
+                                "model": "armored_elytra:item/elytra_iron_chestplate_amethyst_trim"
+                              },
+                              "on_false": {
+                                "type": "minecraft:condition",
+                                "on_true": {
+                                  "type": "minecraft:model",
+                                  "model": "armored_elytra:item/elytra_iron_chestplate_resin_trim"
+                                },
+                                "on_false": {
+                                  "type": "minecraft:model",
+                                  "model": "armored_elytra:item/elytra_iron_chestplate"
+                                },
+                                "property": "minecraft:component",
+                                "predicate": "minecraft:custom_data",
+                                "value": {
+                                  "armored_elytra:trim_material": "minecraft:resin"
+                                }
+                              },
+                              "property": "minecraft:component",
+                              "predicate": "minecraft:custom_data",
+                              "value": {
+                                "armored_elytra:trim_material": "minecraft:amethyst"
+                              }
+                            },
+                            "property": "minecraft:component",
+                            "predicate": "minecraft:custom_data",
+                            "value": {
+                              "armored_elytra:trim_material": "minecraft:lapis"
+                            }
+                          },
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {
+                            "armored_elytra:trim_material": "minecraft:diamond"
+                          }
+                        },
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {
+                          "armored_elytra:trim_material": "minecraft:emerald"
+                        }
+                      },
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {
+                        "armored_elytra:trim_material": "minecraft:gold"
+                      }
+                    },
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {
+                      "armored_elytra:trim_material": "minecraft:copper"
+                    }
+                  },
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {
+                    "armored_elytra:trim_material": "minecraft:redstone"
+                  }
                 },
-                "when": "minecraft:redstone"
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {
+                  "armored_elytra:trim_material": "minecraft:netherite"
+                }
               },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_iron_chestplate_copper_trim"
-                },
-                "when": "minecraft:copper"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_iron_chestplate_gold_trim"
-                },
-                "when": "minecraft:gold"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_iron_chestplate_emerald_trim"
-                },
-                "when": "minecraft:emerald"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_iron_chestplate_diamond_trim"
-                },
-                "when": "minecraft:diamond"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_iron_chestplate_lapis_trim"
-                },
-                "when": "minecraft:lapis"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_iron_chestplate_amethyst_trim"
-                },
-                "when": "minecraft:amethyst"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_iron_chestplate_resin_trim"
-                },
-                "when": "minecraft:resin"
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {
+                "armored_elytra:trim_material": "minecraft:iron"
               }
-            ],
-            "fallback": {
-              "type": "minecraft:model",
-              "model": "armored_elytra:item/elytra_iron_chestplate"
             },
-            "property": "minecraft:trim_material"
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {
+              "armored_elytra:trim_material": "minecraft:quartz"
+            }
           },
           "when": "minecraft:iron_chestplate"
         },
         {
           "model": {
-            "type": "minecraft:select",
-            "cases": [
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_chainmail_chestplate_quartz_trim"
-                },
-                "when": "minecraft:quartz"
+            "type": "minecraft:condition",
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "armored_elytra:item/elytra_chainmail_chestplate_quartz_trim"
+            },
+            "on_false": {
+              "type": "minecraft:condition",
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "armored_elytra:item/elytra_chainmail_chestplate_iron_trim"
               },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_chainmail_chestplate_iron_trim"
-                },
-                "when": "minecraft:iron"
-              },
-              {
-                "model": {
+              "on_false": {
+                "type": "minecraft:condition",
+                "on_true": {
                   "type": "minecraft:model",
                   "model": "armored_elytra:item/elytra_chainmail_chestplate_netherite_trim"
                 },
-                "when": "minecraft:netherite"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_chainmail_chestplate_redstone_trim"
+                "on_false": {
+                  "type": "minecraft:condition",
+                  "on_true": {
+                    "type": "minecraft:model",
+                    "model": "armored_elytra:item/elytra_chainmail_chestplate_redstone_trim"
+                  },
+                  "on_false": {
+                    "type": "minecraft:condition",
+                    "on_true": {
+                      "type": "minecraft:model",
+                      "model": "armored_elytra:item/elytra_chainmail_chestplate_copper_trim"
+                    },
+                    "on_false": {
+                      "type": "minecraft:condition",
+                      "on_true": {
+                        "type": "minecraft:model",
+                        "model": "armored_elytra:item/elytra_chainmail_chestplate_gold_trim"
+                      },
+                      "on_false": {
+                        "type": "minecraft:condition",
+                        "on_true": {
+                          "type": "minecraft:model",
+                          "model": "armored_elytra:item/elytra_chainmail_chestplate_emerald_trim"
+                        },
+                        "on_false": {
+                          "type": "minecraft:condition",
+                          "on_true": {
+                            "type": "minecraft:model",
+                            "model": "armored_elytra:item/elytra_chainmail_chestplate_diamond_trim"
+                          },
+                          "on_false": {
+                            "type": "minecraft:condition",
+                            "on_true": {
+                              "type": "minecraft:model",
+                              "model": "armored_elytra:item/elytra_chainmail_chestplate_lapis_trim"
+                            },
+                            "on_false": {
+                              "type": "minecraft:condition",
+                              "on_true": {
+                                "type": "minecraft:model",
+                                "model": "armored_elytra:item/elytra_chainmail_chestplate_amethyst_trim"
+                              },
+                              "on_false": {
+                                "type": "minecraft:condition",
+                                "on_true": {
+                                  "type": "minecraft:model",
+                                  "model": "armored_elytra:item/elytra_chainmail_chestplate_resin_trim"
+                                },
+                                "on_false": {
+                                  "type": "minecraft:model",
+                                  "model": "armored_elytra:item/elytra_chainmail_chestplate"
+                                },
+                                "property": "minecraft:component",
+                                "predicate": "minecraft:custom_data",
+                                "value": {
+                                  "armored_elytra:trim_material": "minecraft:resin"
+                                }
+                              },
+                              "property": "minecraft:component",
+                              "predicate": "minecraft:custom_data",
+                              "value": {
+                                "armored_elytra:trim_material": "minecraft:amethyst"
+                              }
+                            },
+                            "property": "minecraft:component",
+                            "predicate": "minecraft:custom_data",
+                            "value": {
+                              "armored_elytra:trim_material": "minecraft:lapis"
+                            }
+                          },
+                          "property": "minecraft:component",
+                          "predicate": "minecraft:custom_data",
+                          "value": {
+                            "armored_elytra:trim_material": "minecraft:diamond"
+                          }
+                        },
+                        "property": "minecraft:component",
+                        "predicate": "minecraft:custom_data",
+                        "value": {
+                          "armored_elytra:trim_material": "minecraft:emerald"
+                        }
+                      },
+                      "property": "minecraft:component",
+                      "predicate": "minecraft:custom_data",
+                      "value": {
+                        "armored_elytra:trim_material": "minecraft:gold"
+                      }
+                    },
+                    "property": "minecraft:component",
+                    "predicate": "minecraft:custom_data",
+                    "value": {
+                      "armored_elytra:trim_material": "minecraft:copper"
+                    }
+                  },
+                  "property": "minecraft:component",
+                  "predicate": "minecraft:custom_data",
+                  "value": {
+                    "armored_elytra:trim_material": "minecraft:redstone"
+                  }
                 },
-                "when": "minecraft:redstone"
+                "property": "minecraft:component",
+                "predicate": "minecraft:custom_data",
+                "value": {
+                  "armored_elytra:trim_material": "minecraft:netherite"
+                }
               },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_chainmail_chestplate_copper_trim"
-                },
-                "when": "minecraft:copper"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_chainmail_chestplate_gold_trim"
-                },
-                "when": "minecraft:gold"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_chainmail_chestplate_emerald_trim"
-                },
-                "when": "minecraft:emerald"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_chainmail_chestplate_diamond_trim"
-                },
-                "when": "minecraft:diamond"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_chainmail_chestplate_lapis_trim"
-                },
-                "when": "minecraft:lapis"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_chainmail_chestplate_amethyst_trim"
-                },
-                "when": "minecraft:amethyst"
-              },
-              {
-                "model": {
-                  "type": "minecraft:model",
-                  "model": "armored_elytra:item/elytra_chainmail_chestplate_resin_trim"
-                },
-                "when": "minecraft:resin"
+              "property": "minecraft:component",
+              "predicate": "minecraft:custom_data",
+              "value": {
+                "armored_elytra:trim_material": "minecraft:iron"
               }
-            ],
-            "fallback": {
-              "type": "minecraft:model",
-              "model": "armored_elytra:item/elytra_chainmail_chestplate"
             },
-            "property": "minecraft:trim_material"
+            "property": "minecraft:component",
+            "predicate": "minecraft:custom_data",
+            "value": {
+              "armored_elytra:trim_material": "minecraft:quartz"
+            }
           },
           "when": "minecraft:chainmail_chestplate"
         }

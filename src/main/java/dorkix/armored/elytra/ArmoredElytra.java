@@ -31,6 +31,7 @@ public class ArmoredElytra implements ModInitializer {
 
 	public static final Identifier ELYTRA_DATA = id("elytra");
 	public static final Identifier CHESTPLATE_DATA = id("chestplate");
+	public static final Identifier TRIM_MATERIAL_DATA = id("trim_material");
 
 	public static Identifier id(String path) {
 		return Identifier.of(MOD_ID, path);
@@ -71,11 +72,9 @@ public class ArmoredElytra implements ModInitializer {
 						attr).build());
 
 		// Copy Armor Trims
-
 		var trims = armor.getComponentChanges().get(DataComponentTypes.TRIM);
 		if (trims != null && trims.isPresent()) {
-			newElytra.applyChanges(ComponentChanges.builder().add(DataComponentTypes.TRIM,
-					trims.get()).build());
+			customData.putString(ArmoredElytra.TRIM_MATERIAL_DATA.toString(), trims.get().material().getIdAsString());
 		}
 
 		var armorType = armor.getItem().toString();
