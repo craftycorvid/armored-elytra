@@ -50,10 +50,10 @@ public abstract class EntityLavaHurtMixin {
                         return;
 
                     ItemStack chestplate =
-                            ItemStack.CODEC.parse(RegistryOps.of(NbtOps.INSTANCE, thisObject.getWorld().getRegistryManager()), armorData).resultOrPartial().orElse(ItemStack.EMPTY);
+                            ItemStack.CODEC.parse(RegistryOps.of(NbtOps.INSTANCE, thisObject.getEntityWorld().getRegistryManager()), armorData).resultOrPartial().orElse(ItemStack.EMPTY);
                     ((ItemEntity) (Object) this).setStack(chestplate);
                 }
-                World world = thisObject.getWorld();
+                World world = thisObject.getEntityWorld();
                 world.playSound((Entity) null, thisObject.getX(), thisObject.getY(),
                         thisObject.getZ(), SoundEvents.ENTITY_GENERIC_BURN,
                         thisObject.getSoundCategory(), 0.4F, 2.0F + thisObject.getRandom().nextFloat() * 0.4F);
